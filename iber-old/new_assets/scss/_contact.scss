@@ -1,0 +1,769 @@
+.contact-form-wrapper {
+    max-width: 750px;
+    padding: 70px;
+
+    @media #{$max-md} {
+        padding: 70px 25px;
+    }
+
+    @media #{$max-xs} {
+        padding: 30px 15px;
+    }
+}
+
+.contact-form-wrapper-4 {
+    max-width: 750px;
+    padding: 70px;
+
+    @media #{$max-laptop} {
+        padding: 70px 25px;
+    }
+
+    @media #{$max-xs} {
+        padding: 30px 15px;
+    }
+}
+
+.contact-form-wrapper-2 {
+    padding-right: 175px;
+
+    .shape-1 {
+        position: absolute;
+        right: 0;
+        bottom: -72px;
+        z-index: -1;
+        animation: jumpAni 8s infinite linear;
+    }
+
+    @media #{$max-laptop} {
+        padding-right: 15px;
+    }
+
+    @media #{$max-lg} {
+        padding-right: 0;
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+}
+
+.contact-form-wrapper-3 {
+    background: $light-grey2;
+    border-radius: 30px;
+    padding: 80px 70px 100px 70px;
+
+    @media #{$max-lg} {
+        padding: 60px 15px 60px 15px;
+    }
+}
+
+.contact-form {
+
+    .input-wrapper {
+        position: relative;
+        z-index: 1;
+        margin-bottom: 40px;
+
+        input {
+            width: 100%;
+            height: 65px;
+            border: 1.5px solid rgba(0, 0, 0, 1);
+            backdrop-filter: blur(15px);
+            background: $white;
+            color: $heding;
+            font-size: 18px;
+            padding-left: 30px;
+            border-radius: 8px;
+
+            &::placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-moz-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-webkit-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-o-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-ms-placeholder {
+                color: $white;
+                font-size: 16px;
+            }
+        }
+
+        textarea {
+            width: 100%;
+            height: 145px;
+            border: 1.5px solid $black;
+            backdrop-filter: blur(15px);
+            background: $white;
+            color: $heding;
+            font-size: 18px;
+            padding-left: 20px;
+            padding-top: 10px;
+            border-radius: 8px;
+
+            &::placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-moz-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-webkit-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-o-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+
+            &::-ms-placeholder {
+                color: $heding;
+                font-size: 18px;
+            }
+        }
+
+    }
+
+    .submit-btn {
+        color: $white;
+        font-family: $satoshiRegular;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1;
+        height: 60px;
+        border-radius: 8px;
+        border: 0;
+        width: 100%;
+        background: $theme-color;
+        @include transition(.4s);
+
+        &:hover {
+            background: $heding;
+        }
+    }
+
+    &.form-style-2 {
+        .input-wrapper {
+            label {
+                color: $white;
+            }
+
+            input,
+            textarea {
+                color: $white;
+                border: 0;
+                background: rgba(255, 255, 255, 0.2);
+
+                &::placeholder {
+                    color: $white;
+                }
+
+                &::-moz-placeholder {
+                    color: $white;
+                }
+
+                &::-webkit-placeholder {
+                    color: $white;
+                }
+
+                &::-o-placeholder {
+                    color: $white;
+                }
+
+                &::-ms-placeholder {
+                    color: $white;
+                }
+            }
+        }
+
+        button {
+            max-width: 280px;
+            background: $theme-color2;
+
+            &:hover {
+                color: $heding;
+                background: $white;
+            }
+        }
+    }
+
+    &.form-style-3 {
+        .input-wrapper {
+
+            input,
+            textarea {
+                color: $body-text-color;
+                border: 0;
+                background: $white;
+
+                &::placeholder {
+                    color: $body-text-color;
+                }
+
+                &::-moz-placeholder {
+                    color: $body-text-color;
+                }
+
+                &::-webkit-placeholder {
+                    color: $body-text-color;
+                }
+
+                &::-o-placeholder {
+                    color: $body-text-color;
+                }
+
+                &::-ms-placeholder {
+                    color: $body-text-color;
+                }
+            }
+
+            textarea {
+                height: 180px;
+            }
+        }
+    }
+}
+
+.booking-form {
+    max-width: 1520px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 5px;
+    background: $theme-color3;
+    border-radius: 20px;
+    position: relative;
+    z-index: 5;
+    margin-top: -80px;
+
+    form {
+        .col {
+            &:last-child {
+                .input-wrapper {
+                    &::before {
+                        display: none;
+                    }
+                }
+
+            }
+        }
+
+    }
+
+    .input-wrapper {
+        margin-bottom: 45px;
+        position: relative;
+        z-index: 1;
+
+
+        &::before {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: 0;
+            background: rgba(0, 0, 0, 0.2);
+            width: 1px;
+            height: 71px;
+            z-index: 1;
+            transform: rotate(15deg);
+        }
+
+        label {
+            color: rgba(0, 0, 0, 0.5);
+            font-size: 20px;
+            font-family: $satoshiRegular;
+            font-weight: 400;
+            display: block;
+        }
+
+        input {
+            color: $body-text-color;
+            font-size: 22px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+            border: 0;
+            background: transparent;
+
+            &::placeholder {
+                color: $body-text-color;
+                font-size: 22px;
+            }
+
+            &::-moz-placeholder {
+                color: $body-text-color;
+                font-size: 22px;
+            }
+
+            &::-webkit-placeholder {
+                color: $body-text-color;
+                font-size: 22px;
+            }
+
+            &::-o-placeholder {
+                color: $body-text-color;
+                font-size: 22px;
+            }
+
+            &::-ms-placeholder {
+                color: $body-text-color;
+                font-size: 22px;
+            }
+        }
+
+        .nice-select.service-chose {
+            color: $body-text-color;
+            border: 1px solid rgba(7, 17, 6, 0.1);
+            background: $white;
+
+            span {
+                color: $body-text-color;
+            }
+        }
+    }
+
+    button {
+        height: 60px;
+    }
+
+    @media #{$max-xl} {
+        margin-top: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    @media #{$max-laptop} {
+        margin-top: 0;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+}
+
+.ht-contact-one {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+//ht-cta
+.ht-cta {
+    border-radius: 0 0 30px 30px;
+
+    .bg-color-shape {
+        background: $light-grey2;
+        width: 100%;
+        height: 160px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-color-shape-2 {
+        background: rgb(231, 249, 241);
+        width: 100%;
+        height: 210px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .bg-color-shape-3 {
+        background: #E9F3F6;
+        width: 100%;
+        height: 160px;
+        left: 0;
+        top: 0;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .shape-1 {
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        bottom: 0;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+}
+
+.cta-bg {
+    overflow: hidden;
+    border-radius: 30px;
+    background: $theme-color;
+    padding-top: 80px;
+    padding-bottom: 55px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        background: rgba(255, 255, 255, 0.15);
+        position: absolute;
+        left: -17%;
+        bottom: -83%;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    &::after {
+        content: '';
+        background: rgba(255, 255, 255, 0.15);
+        position: absolute;
+        right: -17%;
+        top: -83%;
+        width: 360px;
+        height: 360px;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    @media #{$max-laptop} {
+        margin-left: 120px;
+        margin-right: 120px;
+    }
+
+    @media #{$max-lg} {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+}
+
+.cta-bg-2 {
+    padding: 75px 0 75px 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        border-radius: 30px;
+        background: linear-gradient(270deg, rgba(0, 0, 0, 0.24) 22.99%, rgba(0, 0, 0, 0.80) 100%);
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    @media #{$max-lg} {
+        padding-left: 0;
+    }
+}
+
+.cta-bg-3 {
+    background: $theme-color3;
+    padding: 75px 70px 58px 70px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 30px;
+    position: relative;
+    z-index: 1;
+
+    @media #{$max-lg} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media #{$max-lg} {
+        padding-top: 60px;
+        padding-bottom: 15px;
+    }
+}
+
+.subscribe-form {
+    width: 100%;
+    max-width: 702px;
+    position: relative;
+    z-index: 1;
+
+    input {
+        width: 100%;
+        height: 80px;
+        border: 0;
+        background: $white;
+        color: $body-text-color;
+        font-size: 18px;
+        font-family: $satoshiRegular;
+        padding-left: 30px;
+        border-radius: 10px;
+
+        &::placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-moz-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-webkit-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-o-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+
+        &::-ms-placeholder {
+            color: $body-text-color;
+            font-size: 16px;
+        }
+    }
+
+    button {
+        color: $white;
+        font-size: 18px;
+        font-family: $satoshiBold;
+        border: 0;
+        font-weight: 700;
+        line-height: 1;
+        padding: 0 30px;
+        display: inline-block;
+        background: $theme-color;
+        position: absolute;
+        right: 15px;
+        top: 12px;
+        border-radius: 8px;
+        min-height: 55px;
+    }
+
+    &.sub-form-2 {
+        max-width: 360x;
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            background: transparent;
+            margin: 0 0 0 auto;
+            display: block;
+            height: 60px;
+        }
+
+        button {
+            color: $white;
+            background: $theme-color2;
+            width: 50px;
+            height: 45px;
+            padding: 0;
+            margin: 0;
+            min-height: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 8px;
+            right: 8px;
+            position: absolute;
+        }
+    }
+
+    &.sub-form-3 {
+        button {
+            background: $heding;
+            @include transition(.4s);
+
+            &:hover {
+                background: $theme-color3;
+            }
+        }
+
+    }
+
+    &.sub-form-4 {
+        max-width: 360x;
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            background: transparent;
+            margin: 0 0 0 auto;
+            display: block;
+            height: 60px;
+        }
+
+        button {
+            color: $white;
+            font-size: 20px;
+            background: $theme-color3;
+            width: 50px;
+            height: 45px;
+            padding: 0;
+            margin: 0;
+            min-height: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 8px;
+            right: 8px;
+            position: absolute;
+        }
+    }
+
+    &.sub-form-5 {
+        max-width: 360x;
+
+        input {
+            border: 1px solid rgba(0, 0, 0, 0.3);
+            background: transparent;
+            margin: 0 0 0 auto;
+            display: block;
+            height: 60px;
+        }
+
+        button {
+            color: $white;
+            font-size: 20px;
+            background: $theme-color;
+            width: 50px;
+            height: 45px;
+            padding: 0;
+            margin: 0;
+            min-height: unset;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            top: 8px;
+            right: 8px;
+            position: absolute;
+
+        }
+    }
+
+
+
+    @media #{$max-xs} {
+        text-align: center;
+        width: 100%;
+
+        button {
+            width: 100%;
+            position: relative;
+            top: unset;
+            right: unset;
+            margin-top: 10px;
+
+            &.black-btn {
+                background: $heding;
+            }
+        }
+    }
+}
+
+
+
+.contact-map {
+    iframe {
+        height: 600px;
+        width: 100%;
+        display: block;
+    }
+
+    @media #{$max-laptop} {
+        iframe {
+            height: 400px;
+        }
+    }
+}
+
+//signup-form-section
+.signup-form-section {
+    .contact-wrapper {
+        background: $light-grey2;
+        box-shadow: 4px 5px 45px 0px rgba(7, 17, 6, 0.05);
+        padding: 50px;
+        border-radius: 30px;
+
+        @media #{$max-xs} {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    }
+
+    .contact-form {
+        .input-wrapper span {
+            left: 21px;
+        }
+    }
+
+    button.signup-btn {
+        border: 1px solid rgba($color: $heding, $alpha: 0.1);
+        width: 100%;
+        height: 45px;
+        background: transparent;
+        color: $heding;
+        font-weight: 600;
+    }
+}
+
+.info-box2 {
+    border: 1px solid rgba(84, 84, 84, 0.4);
+    border-radius: 20px;
+    padding: 58px 50px 40px 50px;
+    margin-top: 100px;
+
+
+    .icon {
+        color: $white;
+        width: 100px;
+        height: 100px;
+        background: $theme-color;
+        border-radius: 50%;
+        font-size: 40px;
+        text-align: center;
+        line-height: 100px;
+        margin-top: -110px;
+        margin-bottom: 55px;
+    }
+
+    .info-title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    p {
+        margin-bottom: 0;
+    }
+
+    @media #{$max-lg} {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .icon {
+            margin-bottom: 30px;
+        }
+
+        .info-title {
+            font-size: 22px;
+        }
+    }
+}

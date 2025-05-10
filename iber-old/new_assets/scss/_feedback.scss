@@ -1,0 +1,373 @@
+//feedback-wrapper-one
+.feedback-wrap-1 {
+    .feedback-text {
+        font-size: 60px;
+        font-family: $satoshiBold;
+        font-weight: 700;
+        color: $body-text-color;
+        line-height: 80px;
+        margin-top: 26px;
+        margin-bottom: 51px;
+
+        span {
+            color: $theme-color;
+        }
+    }
+
+    .name {
+        color: $heding;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+    }
+
+    .designation {
+        font-size: 18px;
+        color: rgba(0, 0, 0, 0.6);
+        font-family: $satoshiRegular;
+        font-weight: 400;
+        margin-bottom: 18px;
+    }
+
+    .rating {
+        a {
+            color: $theme-color;
+            font-size: 24px;
+            margin: 0 4px;
+        }
+    }
+
+    @media #{$max-laptop} {
+        .feedback-text {
+            font-size: 36px;
+            line-height: 50px;
+        }
+    }
+
+    @media #{$max-xs} {
+        .feedback-text {
+            font-size: 24px;
+            line-height: 38px;
+            margin-bottom: 25px;
+        }
+
+        .name {
+            font-size: 20px;
+        }
+    }
+}
+
+.feedback-wrap-2 {
+    text-align: center;
+    background: $white;
+    border-radius: 20px;
+    padding: 0 38px 48px;
+    margin-top: 65px;
+
+    .author-avatar {
+
+        img {
+            margin-top: -65px;
+            margin-bottom: 47px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+
+    .name {
+        color: $heding;
+        font-size: 28px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        margin-bottom: 27px;
+    }
+
+    .feedback-text {
+        font-size: 18px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+    }
+
+
+    .rating {
+        margin-bottom: 30px;
+
+        a {
+            color: $theme-color;
+            font-size: 24px;
+            margin: 0 4px;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding: 0 15px 30px;
+    }
+
+    @media #{$max-xs} {
+
+
+        .name {
+            font-size: 20px;
+        }
+    }
+}
+
+.feedback-wrap-3 {
+    background: $white;
+    border-radius: 30px;
+    padding: 60px 38px 53px 65px;
+    margin-bottom: 45px;
+
+    .feedback-title {
+        font-size: 60px;
+        margin-bottom: 33px;
+
+        .quote-icon {
+            transform: translateY(-25px);
+            display: inline-block;
+
+            @media #{$max-xs} {
+                max-width: 70%;
+            }
+        }
+    }
+
+    .author-avatar {
+        margin-right: 15px;
+
+        img {
+            border-radius: 50%;
+            display: inline-block;
+        }
+    }
+
+    .name {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+    }
+
+    .designation {
+        color: $grey;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .feedback-text {
+        font-size: 30px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        font-style: italic;
+        line-height: 1.5;
+        margin-bottom: 40px;
+    }
+
+
+    .rating {
+        a {
+            color: $yellow-color;
+            font-size: 24px;
+            margin: 0 4px;
+        }
+    }
+
+    @media #{$max-laptop} {
+        padding-left: 25px;
+        padding-right: 25px;
+
+        .feedback-title {
+            font-size: 40px;
+        }
+
+        .feedback-text {
+            font-size: 24px;
+        }
+    }
+
+    @media #{$max-xs} {
+
+        padding-left: 15px;
+        padding-right: 15px;
+
+        .feedback-title {
+            font-size: 30px;
+        }
+
+        .feedback-text {
+            font-size: 20px;
+        }
+    }
+}
+
+
+.feedback-wrap-4 {
+
+    background: #E9F3F6;
+    padding-left: 65px;
+    padding-right: 30px;
+    border-radius: 25px;
+
+    .quote-icon {
+        margin-left: -25px;
+        transform: translateY(8px);
+        display: inline-block;
+    }
+
+
+    .author-avatar {
+        position: relative;
+        margin-top: -80px;
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    .name {
+        color: $heding;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 0;
+    }
+
+    .designation {
+        color: $grey;
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .feedback-text {
+        font-size: 50px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        line-height: 65px;
+        margin-bottom: 43px;
+    }
+
+
+    .rating {
+        border-radius: 42.5px;
+        background: rgba(255, 255, 255, 0.70);
+        box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.07);
+        backdrop-filter: blur(35px);
+        text-align: center;
+        width: 226px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        bottom: 77px;
+        left: -23%;
+        animation: jumpAni 7s infinite linear;
+
+        p {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $yellow-color;
+            font-size: 24px;
+            margin: 0 4px;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-left: 25px;
+
+        .feedback-text {
+            font-size: 32px;
+            line-height: 42px;
+        }
+    }
+
+    @media #{$max-md} {
+        padding-bottom: 40px;
+        padding-left: 15px;
+        padding-right: 0;
+
+        .author-avatar {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .rating {
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .quote-icon {
+            margin-left: 0;
+            margin-bottom: 20px;
+        }
+
+        .feedback-text {
+            font-size: 28px;
+        }
+    }
+}
+
+.feedback-section-bg {
+    background: rgba(231, 249, 241, 1);
+
+    .shape-1 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
+    .shape-2 {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+
+        @media #{$max-laptop} {
+            display: none;
+        }
+    }
+}
+
+.feedback-section-bg-2 {
+    background: $theme-color3;
+
+    .shape-1 {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+
+    .shape-2 {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+}
+
+.container-feedback-2 {
+
+    // max-width: 1680px;
+    .feedback-2-slider {
+        margin: 0 0 0 auto;
+        margin-left: 245px;
+        margin-right: -300px;
+    }
+
+    @media #{$max-laptop} {
+        .feedback-2-slider {
+            margin-left: 0;
+            margin-right: 0;
+        }
+    }
+}
+
+.feedback-slider-4 {
+    ul.slick-dots {
+        display: none !important;
+    }
+}

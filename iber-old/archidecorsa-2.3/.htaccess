@@ -1,0 +1,31 @@
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^home$ index.php [L]
+RewriteRule ^about$ about.html [L]
+RewriteRule ^contact$ contacts.html [L]
+RewriteRule ^contactus$ contacts.html [L]
+
+RewriteRule ^gallery$ gallery.php [L]
+RewriteRule ^images$ gallery.php [L]
+
+RewriteRule ^services$ services.html [L]
+RewriteRule ^projects$ projects.php [L]
+
+RewriteRule ^blog$ blog.html [L]
+RewriteRule ^blog-details$ blog-details.html [L]
+
+RewriteRule ^project$ .html [L]
+RewriteRule ^project/([^/]+)/? project-details.php?url=$1 [L,QSA]
+
+
+RewriteRule ^interior-fit-out$ interior-fit-out.html [L]
+RewriteRule ^display-solutions$ display-solutions.html [L]
+RewriteRule ^electrical-works$ electrical-works.html [L]
+RewriteRule ^mechanical-services$ mechanical-services.html [L]
+RewriteRule ^maintenance-services$ maintenance-services.html [L]
+RewriteRule ^construction-works$ construction-works.html [L]
+RewriteRule ^surveying-services$ surveying-services.html [L]
+RewriteRule ^architecture$ architecture.html [L]
+
+

@@ -1,0 +1,570 @@
+//portfolio-style-one
+.case-wrap-1 {
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    &::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.70) 54.32%, #FFF 100%);
+        width: 100%;
+        height: 243px;
+        z-index: 1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.70) 54.32%, #FFF 100%);
+        width: 100%;
+        height: 243px;
+        z-index: 1;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+
+    .case-thumb {
+        position: relative;
+        z-index: 1;
+
+        .case-img {
+            border-radius: 23px;
+            width: 100%;
+        }
+    }
+
+    .shape-1 {
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
+    }
+
+    .icon {
+        color: $white;
+        font-size: 80px;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        z-index: 3;
+    }
+
+    .content {
+        padding: 15px 20px 24px 40px;
+        position: absolute;
+        z-index: 3;
+        width: 100%;
+        bottom: 0;
+        @include transition(0.4s);
+
+        @media #{$max-md} {
+            padding-left: 15px;
+            padding-right: 10px;
+        }
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-size: 20px;
+        font-family: $satoshiRegular;
+        font-weight: 400;
+        margin-bottom: 7px;
+        @include transition(0.4s);
+    }
+
+    .pf-title {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        width: calc(100% - 60px);
+        transition: all 0.4s;
+
+        &:hover {
+            color: $theme-color;
+        }
+
+        @media #{$max-md} {
+            font-size: 24px;
+        }
+    }
+
+    .icon-link {
+        color: $white;
+        font-size: 20px;
+        background: $white;
+        width: 90px;
+        height: 90px;
+        border-radius: 20px 0 20px 0;
+        display: inline-block;
+        text-align: center;
+        line-height: 85px;
+        transition: all 0.4s;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 3;
+
+        img {
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: brightness(100%) invert(1);
+            }
+        }
+
+        @media #{$max-xs} {
+            width: 60px;
+        }
+    }
+}
+
+.case-wrap-2 {
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 3;
+
+    .case-thumb {
+        margin-bottom: 32px;
+        position: relative;
+        z-index: 1;
+
+        .case-img {
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-family: $satoshiRegular;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 7px;
+        @include transition(0.4s);
+    }
+
+    .pf-title {
+        font-size: 30px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $theme-color;
+        }
+
+        @media #{$max-md} {
+            font-size: 24px;
+        }
+    }
+
+    .icon-link {
+        color: $white;
+        font-size: 20px;
+        background: $white;
+        width: 90px;
+        height: 90px;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        line-height: 85px;
+        transition: all 0.4s;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        opacity: 0;
+        visibility: hidden;
+        z-index: 3;
+
+        img {
+            display: inline-block;
+            transition: all 0.4s;
+        }
+    }
+}
+
+.case-wrap-3 {
+    background: $white;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 3;
+
+    .case-thumb {
+        padding: 30px;
+        position: relative;
+        z-index: 1;
+
+        img {
+            display: inline-block;
+            border-radius: 20px;
+            width: 100%;
+        }
+    }
+
+    .pf-tag {
+        color: $heding;
+        font-size: 14px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        background: $white;
+        padding: 4px 20px;
+        border-radius: 30px;
+        position: absolute;
+        z-index: 1;
+        left: 45px;
+        top: 45px;
+
+        @include transition(0.4s);
+    }
+
+    .pf-subtitle {
+
+        color: $theme-color2;
+        font-family: $satoshiRegular;
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 12px;
+        @include transition(0.4s);
+    }
+
+    .content {
+        padding-left: 30px;
+        padding-bottom: 38px;
+        padding-top: 23px;
+    }
+
+    .pf-title {
+        font-size: 28px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $theme-color2;
+        }
+
+        @media #{$max-md} {
+            font-size: 24px;
+        }
+    }
+
+    .icon-link {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+
+        span {
+            color: $white;
+            font-size: 20px;
+            background: $white;
+            width: 80px;
+            height: 80px;
+            border-radius: 10px 0 10px 0;
+            display: inline-block;
+            text-align: center;
+            line-height: 75px;
+            transition: all 0.4s;
+            position: relative;
+            z-index: 1;
+        }
+
+        img {
+            display: inline-block;
+            transition: all 0.4s;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            width: 90px;
+            height: 90px;
+            background: rgba(231, 249, 241, 1);
+            left: -10px;
+            top: -10px;
+            border-radius: 10px 0 0 0;
+            z-index: -1;
+        }
+
+        @media #{$max-xs} {
+            display: none;
+        }
+    }
+
+    &:hover {
+        .icon-link {
+            span {
+                background: $theme-color2;
+
+                img {
+                    filter: brightness(100%) invert(1);
+                }
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+        .case-thumb {
+            padding: 15px;
+        }
+
+        .content {
+            padding-left: 15px;
+        }
+    }
+
+    @media #{$max-xs} {
+        .pf-tag {
+            left: 25px;
+            top: 25px;
+        }
+
+        .content {
+            padding-bottom: 25px;
+        }
+    }
+}
+
+
+.case-wrap-4 {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding-top: 30px;
+    margin-bottom: 45px;
+    padding-bottom: 54px;
+    position: relative;
+    z-index: 3;
+
+    .hover-img {
+        position: absolute;
+        right: 5%;
+        top: -50%;
+        width: 495px;
+        height: 495px;
+        opacity: 0;
+        visibility: hidden;
+        @include transition(.4s);
+
+        @media #{$max-laptop} {
+            display: none;
+        }
+    }
+
+    .pf-subtitle {
+        color: $heding;
+        font-family: $satoshiMedium;
+        font-size: 28px;
+        font-weight: 500;
+        margin-top: 5px;
+        @include transition(0.4s);
+    }
+
+    .content {
+        padding-left: 33px;
+    }
+
+    .pf-title {
+        font-size: 60px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        line-height: 1;
+        transition: all 0.4s;
+
+        &:hover {
+            color: $theme-color3;
+        }
+
+        @media #{$max-lg} {
+            font-size: 45px;
+        }
+
+        @media #{$max-md} {
+            font-size: 32px;
+        }
+
+        @media #{$max-xs} {
+            font-size: 28px;
+            margin-top: 30px;
+        }
+    }
+
+    .icon-link {
+
+        color: $heding;
+        font-size: 34px;
+        background: $white;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        border: 1px solid $heding;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
+        position: relative;
+        z-index: 1;
+
+
+        img {
+            display: inline-block;
+            transition: all 0.4s;
+        }
+    }
+
+    &:hover {
+        .hover-img {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .icon-link {
+            background: $theme-color3;
+            border-color: $theme-color3;
+
+            img {
+                filter: brightness(100%) invert(1);
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .content {
+            padding-left: 15px;
+        }
+    }
+
+    @media #{$max-xs} {
+        .pf-tag {
+            left: 25px;
+            top: 25px;
+        }
+
+        .content {
+            padding-left: 0;
+            padding-bottom: 25px;
+        }
+    }
+}
+
+//case-section-bg
+.case-section-bg {
+    background: rgba(231, 249, 241, 1);
+
+    .shape-cs3b {
+        position: absolute;
+        right: 0;
+        top: -34%;
+        z-index: 1;
+
+        @media #{$max-laptop} {
+            display: none;
+        }
+    }
+}
+
+.case-section-bg-2 {
+    background: #E9F3F6;
+}
+
+
+
+//filter menu
+.portfolio-menu {
+    .gf_btn {
+        color: $body-text-color;
+        font-size: 18px;
+        font-size: 400;
+        line-height: 18px;
+        padding: 16px 20px;
+        border: 0;
+        border-radius: 0;
+        margin-left: 2px;
+        margin-right: 2px;
+        margin-bottom: 5px;
+        background: rgba($color: $heding, $alpha: 0.03);
+        position: relative;
+        z-index: 1;
+        border: 1px solid rgba($color: $heding, $alpha: 0.1);
+        @include transition(0.6s);
+
+        &:hover,
+        &.active {
+            background: $theme-color;
+            border-color: $theme-color;
+            color: $white;
+        }
+    }
+
+    @media #{$max-md} {
+        .gf_btn {
+            font-size: 16px;
+            padding: 10px;
+        }
+    }
+}
+
+.project-info {
+    background: #F0F0FF;
+    border-radius: 20px;
+    padding: 40px;
+
+    ul {
+        li {
+            &:last-child {
+                .info-box {
+                    border: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+    }
+
+    .info-box {
+        border-bottom: 1px solid $theme-color;
+        padding-bottom: 28px;
+        margin-bottom: 28px;
+
+        .icon {
+            color: $white;
+            width: 60px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            background: $theme-color;
+            border-radius: 50%;
+            font-size: 26px;
+            margin-right: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            color: rgba(0, 0, 0, 0.6);
+            margin-bottom: 0px;
+        }
+
+        h5 {
+            font-size: 20px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+        }
+    }
+
+    @media #{$max-xs} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}

@@ -1,0 +1,214 @@
+
+/*footer.........................................*/
+:root{
+    --blue-bg:linear-gradient(45deg, #0e2144 0%, #224c9a 52%, #306ad4 100%);
+}
+footer{
+    background: var(--blue-bg)
+}
+footer a{
+    text-decoration: none;
+    color: white;
+  }
+  footer{
+    color: white;
+    text-align: center;
+  }
+  footer .sister-div img{
+    width: 50%;
+  }
+  footer .menu-div{
+    display: flex;
+    justify-content: center;
+  }
+ 
+  footer .menu-div .row{
+    width: 80%;
+  }
+  .footer_2,.footer_1{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+  }
+  .footer_3{
+   
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: baseline;
+
+  }
+  footer .last-cntr{
+    display: flex;
+    justify-content: space-between;
+  }
+  footer .Social-media-div{
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+  }
+  @media only screen and (min-width:800px){
+    footer h3{
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+  }
+  @media only screen and (max-width:600px) {
+    footer .m-gap{
+      gap: 40px;
+    }
+    footer .Social-media-div{
+      margin-bottom: 10px;
+    }
+    footer .last-cntr{
+      display: flex;
+      flex-direction: column;
+    }
+    
+  }
+  footer .address-container {
+    margin: 20px;
+    text-align: left;
+  }
+  footer .address-container span{
+    font-size: 19px;
+  }
+  footer .menu-div{
+    text-align: left;
+    
+    margin-left: 32px;
+    
+  }
+  footer a:hover{
+    color: #b8c7e1;
+  }
+  footer h3,h4{
+    color: white;
+    font-family: sans-serif;
+  }
+  
+  footer .address {
+    margin-bottom: 10px;
+    margin-left: 25px !important;
+    margin-top: -3px;
+  }
+  footer .address i{
+    font-size: 23px;
+      margin-left: -35px;
+      margin-right: 10px;
+  
+  }
+  footer .sales_enq i{
+    margin-right: 7px;
+  }
+ 
+  @media screen and(max-width:600px) {
+    footer .menu-div {
+      text-align: left;
+      margin-left: -22px !important;
+    }
+    footer .menu_head {
+      text-align: left;
+      margin-left: 29px !important;
+    }
+    footer .iber_img{
+      text-align: center;
+    }
+    
+  }
+  /*footer..........................................................end*/
+  
+/*quick contact*/
+.quick-contact{
+  position: fixed;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  background-color: #9424b9;
+  border-radius: 50%;
+  z-index: 1000;
+  bottom: 30px;
+  left: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  transform: translateX(-100px);
+}
+.quick-contact.q-c-active{
+  transform: translateX(0px);
+}
+@keyframes q-c-anime{
+  
+  0%{
+    transform: rotate(345deg);
+  }
+  58%{
+    transform: rotate(345deg);
+  }
+  65%{
+    transform: rotate(355deg);
+  }
+  72%{
+    transform: rotate(345deg);
+  }
+  79%{
+    transform: rotate(355deg);
+  }
+  86%{
+    transform: rotate(345deg);
+  }
+  93%{
+    transform: rotate(355deg);
+  }
+  100%{
+    transform: rotate(345deg);
+  }
+ 
+}
+.quick-contact i{
+  animation: q-c-anime 3s linear infinite;
+}
+.quick-contact-wapp{
+  position: fixed;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  background-color: #24b966;
+  border-radius: 50%;
+  z-index: 1000;
+  bottom: 100px;
+  left: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  transform: translateX(-100px);
+}
+.quick-contact-wapp.q-c-active{
+  transform: translateX(0px);
+}
+
+.q-top{
+  position: fixed;
+  text-decoration: none;
+  height: 50px;
+  width: 50px;
+  background: var(--blue-bg);
+  border-radius: 50%;
+  z-index: 1000;
+  bottom: 83px;
+  right: 30px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+  transform: translateX(100px);
+}
+.q-top.q-c-active{
+  transform: translateX(0px);
+}
+/*quick contact................end*/
+  
+  

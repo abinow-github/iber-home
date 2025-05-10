@@ -1,0 +1,463 @@
+.service-slide-container,
+.case-slide-container {
+    margin-left: 240px;
+
+    @media #{$max-laptop} {
+        margin-left: 0;
+    }
+}
+
+.service-wrap-1 {
+    background: $white;
+    border-radius: 20px;
+    padding: 40px 40px 30px 40px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        margin-bottom: 48px;
+    }
+
+    .service-title {
+        font-size: 28px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+    }
+
+    .more-btn {
+        width: 90px;
+        height: 90px;
+        border-radius: 20px 0px 20px 0px;
+        background: $white;
+        text-align: center;
+        line-height: 75px;
+        border-top: 10px solid $light-grey;
+        border-left: 10px solid $light-grey;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        @include transition(.4s);
+
+        img {
+            @include transition(.4s);
+        }
+    }
+
+    p {
+        margin-bottom: 8px;
+    }
+
+    &:hover {
+        .service-title {
+            color: $theme-color;
+        }
+
+        .more-btn {
+            background: $theme-color;
+
+            img {
+                filter: brightness(100%) invert(1);
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+        .service-title {
+            font-size: 20px;
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media #{$max-xs} {
+        .more-btn {
+            display: none;
+        }
+    }
+}
+
+.service-wrap-2 {
+    background: $white;
+    border-radius: 20px;
+    padding: 50px 56px 47px 60px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        margin-bottom: 48px;
+    }
+
+    .service-title {
+        margin-bottom: 30px;
+
+        a {
+            font-size: 28px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .more-btn {
+        color: $heding;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        @include transition(.4s);
+
+        img {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .arrow-back {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0);
+            @include transition(.4s);
+        }
+
+        .arrow-front {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        &:hover {
+            color: $theme-color;
+
+            img {
+                filter: unset;
+            }
+
+            .arrow-back {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .arrow-front {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+                transform: scale(0);
+            }
+        }
+    }
+
+    .description {
+        margin-bottom: 36px;
+    }
+
+    @media #{$max-lg} {
+        .service-title {
+            a {
+                font-size: 22px;
+            }
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.service-wrap-3 {
+    background: $white;
+    border-radius: 20px;
+    padding: 40px 40px 60px 40px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        width: 90px;
+        height: 90px;
+        border: 1px solid rgba(84, 84, 255, 0.1);
+        border-radius: 50%;
+        text-align: center;
+        line-height: 82px;
+        margin-bottom: 45px;
+
+        img {
+            display: inline-block;
+        }
+    }
+
+    .service-title {
+        margin-bottom: 25px;
+
+        a {
+            font-size: 26px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+        }
+    }
+
+    .more-btn {
+        overflow: hidden;
+        display: inline-block;
+        color: $heding;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        line-height: 1;
+        border: 1px solid rgba(84, 84, 255, 0.1);
+        border-radius: 30px;
+        padding: 14px 43px;
+        position: relative;
+        z-index: 1;
+        @include transition(.4s);
+
+        span {
+            width: 40px;
+            height: 40px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            background: #fff;
+            position: absolute;
+            right: -50px;
+            top: 2px;
+            border-radius: 50%;
+
+            @include transition(.4s);
+
+            img {
+                @include transition(.4s);
+            }
+        }
+
+
+
+        &:hover {
+            color: $white;
+            background: $theme-color2;
+            padding-left: 30px;
+            padding-right: 75px;
+
+            span {
+                right: 3px;
+            }
+        }
+    }
+
+    .description {
+        color: rgba(2, 25, 54, 0.7);
+        font-size: 20px;
+        line-height: 36px;
+        margin-bottom: 58px;
+    }
+
+    @media #{$max-lg} {
+        .service-title {
+            a {
+                font-size: 22px;
+            }
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-bottom: 40px;
+    }
+}
+
+.service-wrap-4 {
+    text-align: center;
+    background: $white;
+    border-radius: 20px;
+    padding: 0px 12px 0px 12px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+    @include transition(.4s);
+
+    .icon {
+        width: 330px;
+        height: 330px;
+        border: 2px solid #ADCED9;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 33px;
+        @include transition(.4s);
+
+        iimg {
+            display: inline-block;
+            @include transition(.4s);
+        }
+
+        .arrow-back {
+            display: none;
+            visibility: hidden;
+            opacity: 0;
+            transform: scale(0);
+            @include transition(.4s);
+        }
+
+        .arrow-front {
+            display: inline-block;
+            @include transition(.4s);
+        }
+    }
+
+    .service-title {
+        margin-bottom: 22px;
+
+        a {
+            font-size: 28px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+
+            &:hover {
+                color: $theme-color3;
+            }
+        }
+    }
+
+    .description {
+        color: $black;
+        font-size: 18px;
+        line-height: 36px;
+    }
+
+    &:hover {
+        .icon {
+            border-color: $theme-color3;
+            background: #FEFAF1;
+            transform: translateY(-10px);
+
+            .arrow-back {
+                display: inline-block;
+                visibility: visible;
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            .arrow-front {
+                visibility: hidden;
+                opacity: 0;
+                display: none;
+                transform: scale(0);
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+        .icon {
+            width: 250px;
+            height: 250px;
+        }
+
+        .service-title {
+            a {
+                font-size: 22px;
+            }
+        }
+    }
+}
+
+.service-wrap-5 {
+    background: $light-grey2;
+    border-radius: 20px;
+    padding: 40px 35px 45px 35px;
+    margin-bottom: 45px;
+    position: relative;
+    z-index: 1;
+
+    .icon {
+        margin-bottom: 38px;
+    }
+
+    .service-title {
+        margin-bottom: 21px;
+
+        a {
+            font-size: 28px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .more-btn {
+        color: $heding;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+        @include transition(.4s);
+
+        img {
+            @include transition(.4s);
+        }
+
+        &:hover {
+            img {
+                transform: rotate(-45deg);
+            }
+        }
+    }
+
+    .description {
+        margin-bottom: 0;
+    }
+
+    @media #{$max-lg} {
+        .service-title {
+            a {
+                font-size: 22px;
+            }
+        }
+
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+@-webkit-keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+.widget-box {
+    border: 1px solid $heding;
+    padding: 35px 30px;
+    border-radius: 10px;
+
+    @media #{$max-lg} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
+
+.ht-service-section {
+    .shape-cs3 {
+        position: absolute;
+        left: 0;
+        top: -50px;
+        z-index: 1;
+
+        @media #{$max-laptop} {
+            display: none;
+        }
+    }
+}

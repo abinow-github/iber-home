@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Client Categories</title>
+<style>
+ 
+
+  @keyframes scale-out-center {
+    0% {
+      -webkit-transform: scale(1);
+              transform: scale(1);
+      opacity: 1;
+    }
+    98% {
+      -webkit-transform: scale(0);
+              transform: scale(0);
+      opacity: 1;
+    }
+    100%{
+      transform: scale(0);
+      display: none;
+    }
+  }
+
+  .col-6 {
+    margin-bottom: 25px;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .col-6.hide {
+    transform: scale(0);
+    display: none;
+  }
+
+  .card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 10px;
+    border: 0;
+    background-color: #f1ebed;
+    border-radius: 10px;
+    width: 100%;
+    height: 180px;
+    cursor: pointer;
+    position: relative;
+    transition: 0.4s;
+  }
+
+  .card img {
+    filter: invert(50%) sepia(11%) saturate(322%) hue-rotate(182deg) brightness(89%) contrast(93%);
+    width: 80%;
+    height: 80%;
+    object-fit: contain;
+    transition: 0.4s;
+  }
+
+  .card:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 0px 0px 1px #61595999;
+    z-index: 1;
+  }
+
+  .card:hover img {
+    filter: none;
+  }
+
+  .pos-abs-cat {
+    position: absolute;
+    padding: 4px 15px;
+    top: 0;
+    border-radius: 0 0 10px 10px;
+    background: #707580ad;
+    color: white;
+  }
+</style>
+</head>
+<body>
+
+<section class="section-5">
+  <div class="container">
+    <div class="row head-row mb-4">
+      <h2>OUR CLIENTS</h2>
+      <p class="p">
+        Small or big, no matter what. Every client of Archi décor is treated with keen attention always. We believe being a family brings the most successful and interesting interior outputs. Hence, every client is handled here with extreme care to meet all the needs and expectations in the best way possible. Let’s have a look at our content clients:
+      </p>
+    </div>
+    <div class="button-row row my-5">
+      <button class="filter-button" data-category="all">All</button>
+      <button class="filter-button" data-category="food">Food</button>
+      <button class="filter-button" data-category="fasion">Fashion</button>
+      <button class="filter-button" data-category="accessories">Accessories</button>
+      <button class="filter-button" data-category="perfume">Perfume</button>
+    </div>
+    <div class="row" id="logos-row">
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="food">
+        <div class="card">
+          <img src="../assets/img/logo/clients/starbucks.png" alt="">
+          <div class="pos-abs-cat">food</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="../assets/img/logo/clients/american-eagle-outfitters-logo.svg" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="../assets/img/logo/clients/the-kooples-vector-logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="../assets/img/logo/clients/GUESS-Logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="fasion">
+        <div class="card">
+          <img src="../assets/img/logo/clients/h&m-logo.png" alt="">
+          <div class="pos-abs-cat">fasion</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="../assets/img/logo/clients/Sony_Make_Believe_logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="perfume">
+        <div class="card">
+          <img src="../assets/img/logo/clients/jo-malone-london-.png" alt="">
+          <div class="pos-abs-cat">perfume</div>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-4 col-6" data-category="accessories">
+        <div class="card">
+          <img src="../assets/img/logo/clients/heuer-hd-logo.png" alt="">
+          <div class="pos-abs-cat">accessories</div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+    $(".filter-button").click(function(){
+      var category = $(this).data('category');
+      if(category === 'all') {
+        $('[data-category]').removeClass('hide');
+      } else {
+        $('[data-category]').addClass('hide');
+        $('[data-category="' + category + '"]').removeClass('hide');
+      }
+      // Slow down the appearance of hidden/visible columns
+      setTimeout(function(){
+        $('.col-6.hide').css('display', 'none');
+      }, 500); // Wait for the transition duration before hiding
+    });
+  });
+</script>
+
+</body>
+</html>

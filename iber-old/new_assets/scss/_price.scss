@@ -1,0 +1,236 @@
+//ht-plan
+.ht-plan {
+    padding-top: 50px;
+    position: relative;
+    z-index: 2;
+
+    .shape-1 {
+        position: absolute;
+        right: 0;
+        top: 50px;
+        border-radius: 0 20px;
+    }
+
+    &.active {
+        .ht-plan-inner {
+            border-radius: 0px 0px 20px 20px;
+            border: 1px solid $heding;
+        }
+    }
+}
+
+.ht-plan-tag {
+    border-top: 1px solid $heding;
+    border-right: 1px solid $heding;
+    border-left: 1px solid $heding;
+    text-align: center;
+    background: #0BC270;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0px 0px;
+    color: #fff;
+    font-weight: 700;
+    font-family: $satoshiBold;
+    height: 50px;
+    line-height: 50px;
+}
+
+.ht-plan-inner {
+    border-radius: 20px;
+    background: #f5f5f5;
+    padding: 40px;
+    @include transition(0.4s);
+    border: 1px solid transparent;
+
+
+    .plan-title {
+        color: $heding;
+        font-size: 28px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        margin-bottom: 27px;
+    }
+
+    .plan-desc {
+        font-size: 22px;
+        font-weight: 400;
+        font-family: $satoshiRegular;
+        margin-bottom: 6px;
+    }
+
+    .plan-price {
+        color: $heding;
+        font-size: 60px;
+        font-weight: 700;
+        font-family: $satoshiBold;
+    }
+
+    .price-border {
+        height: 1px;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.15);
+        display: block;
+        margin-bottom: 43px;
+    }
+
+    // .ht-price-btn {
+    //     color: $white;
+    //     font-size: 16px;
+    //     line-height: 1;
+    //     font-weight: 500;
+    //     padding: 16px 30px;
+    //     background: transparent;
+    //     border: 1px solid #fff;
+    //     display: inline-block;
+
+    //     img {
+    //         filter: invert(1);
+    //     }
+
+    //     @include transition(0.4s);
+    // }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            font-size: 18px;
+            font-weight: 500;
+            color: $heding;
+            font-family: $satoshiBold;
+            display: block;
+            padding-bottom: 14px;
+
+            .check-mark {
+                color: $theme-color2;
+                font-size: 20px;
+                display: inline-block;
+                transform: translateY(2px);
+            }
+
+            &.price-available {
+                .check-mark {
+                    color: $heding;
+                }
+            }
+
+            &.unavailable {
+                .check-mark {
+                    color: $heding;
+                }
+            }
+        }
+    }
+
+    .ht-btn {
+        border-color: $white;
+        background: $white;
+
+        &::before {
+            background: $theme-color2;
+        }
+
+        span {
+            background: $theme-color2;
+
+            img {
+                filter: brightness(100%) invert(1);
+            }
+        }
+    }
+
+
+
+    &:hover {
+        background: $white;
+        border-color: $heding;
+
+        .ht-btn {
+            color: $white;
+
+            &::before {
+                width: 100%;
+            }
+
+            span {
+                background: $white;
+
+                img {
+                    filter: brightness(0) invert(0);
+                }
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    @media #{$max-lg} {
+        .price-title {
+            font-size: 24px;
+        }
+
+        .plan-price {
+            font-size: 45px;
+        }
+
+        padding: 40px 30px;
+    }
+
+    @media #{$max-md} {
+        .feature-list {
+            li {
+                font-size: 16px;
+            }
+        }
+
+        .plan-price {
+            font-size: 32px;
+        }
+
+        padding: 30px 15px;
+    }
+}
+
+.pstyle-2 {
+    .ht-plan-tag {
+        background: $theme-color;
+    }
+
+    .ht-btn {
+        &::before {
+            background: $theme-color;
+        }
+
+        span {
+            background: $theme-color;
+        }
+    }
+
+    &:hover {
+        background: $white;
+        border-color: $heding;
+
+        .ht-btn {
+            color: $white;
+
+            &::before {
+                width: 100%;
+            }
+
+            span {
+                background: $white;
+
+                img {
+                    filter: brightness(0) invert(0);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+[30-Apr-2025 03:12:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'iberrtech_db'@'localhost' (using password: YES) in /home/vivlbiua/public_html/admin/root/db.php:7
+Stack trace:
+#0 /home/vivlbiua/public_html/admin/root/db.php(7): mysqli->__construct('localhost', 'iberrtech_db', 'u-e7[dUm4ldx', 'iberrtech_db')
+#1 /home/vivlbiua/public_html/Blogs.php(356): include('/home/vivlbiua/...')
+#2 {main}
+  thrown in /home/vivlbiua/public_html/admin/root/db.php on line 7
+[30-Apr-2025 03:12:43 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'iberrtech_db'@'localhost' (using password: YES) in /home/vivlbiua/public_html/admin/root/db.php:7
+Stack trace:
+#0 /home/vivlbiua/public_html/admin/root/db.php(7): mysqli->__construct('localhost', 'iberrtech_db', 'u-e7[dUm4ldx', 'iberrtech_db')
+#1 /home/vivlbiua/public_html/Blogs.php(356): include('/home/vivlbiua/...')
+#2 {main}
+  thrown in /home/vivlbiua/public_html/admin/root/db.php on line 7
+[30-Apr-2025 03:12:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'iberrtech_db'@'localhost' (using password: YES) in /home/vivlbiua/public_html/admin/root/db.php:7
+Stack trace:
+#0 /home/vivlbiua/public_html/admin/root/db.php(7): mysqli->__construct('localhost', 'iberrtech_db', 'u-e7[dUm4ldx', 'iberrtech_db')
+#1 /home/vivlbiua/public_html/Blogs.php(356): include('/home/vivlbiua/...')
+#2 {main}
+  thrown in /home/vivlbiua/public_html/admin/root/db.php on line 7
+[30-Apr-2025 05:23:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'iberrtech_db'@'localhost' (using password: YES) in /home/vivlbiua/public_html/admin/root/db.php:7
+Stack trace:
+#0 /home/vivlbiua/public_html/admin/root/db.php(7): mysqli->__construct('localhost', 'iberrtech_db', 'u-e7[dUm4ldx', 'iberrtech_db')
+#1 /home/vivlbiua/public_html/Blogs.php(356): include('/home/vivlbiua/...')
+#2 {main}
+  thrown in /home/vivlbiua/public_html/admin/root/db.php on line 7
+[30-Apr-2025 06:44:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'iberrtech_db'@'localhost' (using password: YES) in /home/vivlbiua/public_html/admin/root/db.php:7
+Stack trace:
+#0 /home/vivlbiua/public_html/admin/root/db.php(7): mysqli->__construct('localhost', 'iberrtech_db', 'u-e7[dUm4ldx', 'iberrtech_db')
+#1 /home/vivlbiua/public_html/Blogs.php(356): include('/home/vivlbiua/...')
+#2 {main}
+  thrown in /home/vivlbiua/public_html/admin/root/db.php on line 7

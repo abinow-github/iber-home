@@ -1,0 +1,864 @@
+.blog-one {
+    background: $white;
+    border-radius: 30px;
+    // box-shadow: 4px 5px 45px 0px rgba(7, 17, 6, 0.05);
+
+
+    .blog-thumb {
+        padding: 30px 30px 0 30px;
+        ;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .blog-date {
+            color: $heding;
+            font-size: 16px;
+            font-weight: 500;
+            background: $white;
+            padding: 8px 20px;
+            border-left: 2px solid $yellow-color;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .blog-meta {
+        a {
+            color: $body-text-color;
+            font-size: 18px;
+            font-weight: 400;
+            display: inline-block;
+            margin-right: 12px;
+            @include transition(.4s);
+
+
+            &:hover {
+                color: $theme-color;
+            }
+
+            &:last-child {
+                color: $grey;
+                margin-right: 0;
+                margin-left: 8px;
+            }
+        }
+
+        .divider {
+            display: inline-block;
+            width: 1.4px;
+            height: 14px;
+            background: $grey;
+            transform: rotate(32deg) translateY(2px);
+        }
+    }
+
+    .blog-title {
+        a {
+            color: $heding;
+            font-size: 32px;
+            line-height: 46px;
+            font-weight: 700;
+            font-family: $satoshiBold;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .blog-content {
+        padding: 0 15px 30px 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .blog-btn {
+        width: 90px;
+        height: 90px;
+        border-radius: 30px 0px 20px 0px;
+        background: $white;
+        text-align: center;
+        line-height: 75px;
+        border-top: 10px solid #F4F4F4;
+        border-left: 10px solid #F4F4F4;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        transition: all 0.4s ease 0s;
+
+        img {
+            filter: invert(1);
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: invert(0);
+            }
+        }
+
+        @media #{$max-md} {
+            display: none;
+        }
+    }
+
+
+
+    @media #{$max-lg} {
+        .classic-gallery-item {
+            .blog-thumb {
+                height: 270px;
+            }
+        }
+
+        .blog-thumb {
+            padding: 15px 15px 0 15px;
+        }
+
+        .blog-content {
+            padding: 0 15px 30px 15px;
+        }
+
+        .blog-meta a {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .blog-meta a:first-child {
+            margin-right: 3px;
+        }
+
+        .blog-title a {
+            font-size: 24px;
+            line-height: 36px;
+        }
+    }
+}
+
+.blog-two {
+    background: $white;
+    border-radius: 30px;
+    // box-shadow: 4px 5px 45px 0px rgba(7, 17, 6, 0.05);
+
+
+    .blog-thumb {
+        padding: 30px 30px 0 30px;
+        ;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .blog-date {
+            color: $heding;
+            font-size: 16px;
+            font-weight: 500;
+            background: $white;
+            padding: 8px 20px;
+            border-left: 2px solid $yellow-color;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .blog-meta {
+        a {
+            color: $body-text-color;
+            font-size: 18px;
+            font-weight: 400;
+            display: inline-block;
+            margin-right: 12px;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color;
+            }
+
+            &:last-child {
+                margin-right: 0;
+                margin-left: 8px;
+                color: $grey;
+
+            }
+        }
+
+        .divider {
+            display: inline-block;
+            width: 1.4px;
+            height: 14px;
+            background: $grey;
+            transform: rotate(32deg) translateY(2px);
+        }
+    }
+
+    .blog-title {
+        a {
+            color: $heding;
+            font-size: 32px;
+            line-height: 46px;
+            font-weight: 700;
+            font-family: $satoshiBold;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+    }
+
+    .blog-content {
+        padding: 0 15px 30px 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .blog-btn {
+        display: inline-block;
+        color: #021936;
+        font-size: 18px;
+        font-weight: 700;
+        font-family: "Satoshi-Bold";
+        transition: all 0.4s ease 0s;
+        width: 70px;
+        height: 70px;
+        background: $heding;
+        border-radius: 50%;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        z-index: 1;
+        right: 25px;
+        bottom: 50px;
+
+
+
+        img {
+            filter: brightness(100) invert(0);
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            transform: rotate(-45deg);
+        }
+    }
+
+    @media #{$max-lg} {
+        .blog-thumb {
+            padding: 15px 15px 0 15px;
+        }
+
+        .blog-content {
+            padding: 0 15px 30px 15px;
+        }
+
+        .blog-meta a {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .blog-meta a:first-child {
+            color: $grey;
+            margin-right: 3px;
+        }
+
+
+        .blog-title a {
+            font-size: 24px;
+            line-height: 36px;
+        }
+
+        .blog-btn {
+            width: 50px;
+            height: 50px;
+            position: relative;
+            right: auto;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+
+}
+
+.blog-three {
+    background: $white;
+    border-radius: 30px;
+    // box-shadow: 4px 5px 45px 0px rgba(7, 17, 6, 0.05);
+
+    .blog-thumb {
+        padding: 30px 30px 0 30px;
+        ;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .blog-date {
+            color: $heding;
+            font-size: 16px;
+            font-weight: 500;
+            background: $white;
+            padding: 8px 20px;
+            border-left: 2px solid $yellow-color;
+            position: absolute;
+            z-index: 1;
+            right: 0;
+            bottom: 0;
+        }
+    }
+
+    .blog-meta {
+        a {
+            color: $theme-color2;
+            font-size: 18px;
+            font-weight: 400;
+            display: inline-block;
+            @include transition(.4s);
+
+            &:hover {
+                color: $heding;
+            }
+        }
+
+        .divider {
+            display: inline-block;
+            width: 1.4px;
+            height: 14px;
+            background: $black;
+            transform: rotate(32deg) translateY(2px);
+        }
+    }
+
+    .blog-title {
+        margin-bottom: 60px;
+
+        a {
+            color: $heding;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+
+            &:hover {
+                color: $theme-color2;
+            }
+        }
+    }
+
+    .blog-content {
+        padding: 0 15px 25px 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .blog-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px 0px 20px 0px;
+        background: $white;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 10px solid rgb(231, 249, 241);
+        border-left: 10px solid rgb(231, 249, 241);
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        transition: all 0.4s ease 0s;
+
+        &:hover {
+            background: $theme-color2;
+
+            img {
+                filter: invert(1);
+            }
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .blog-thumb {
+            padding: 15px 15px 0 15px;
+        }
+
+        .blog-content {
+            padding: 0 15px 25px 15px;
+        }
+
+        .blog-meta a {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+}
+
+.classic-style {
+    background: $light-grey2;
+
+    .blog-thumb {
+        display: block;
+        margin-bottom: 30px;
+        position: relative;
+        z-index: 1;
+
+        img {
+            display: inline-block;
+            border-radius: 30px;
+        }
+    }
+
+
+    .blog-meta {
+        a {
+            color: $theme-color;
+            font-size: 18px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+            display: inline-block;
+            margin-right: 30px;
+
+            i {
+                color: $theme-color;
+            }
+        }
+
+        a:last-child {
+            margin-right: 0;
+        }
+    }
+
+    .blog-title {
+        max-width: 87%;
+        margin-bottom: 30px;
+
+        a {
+            font-size: 42px;
+            font-weight: 700;
+            font-family: $satoshiBold;
+            line-height: 1.4;
+
+            &:hover {
+                color: $theme-color;
+            }
+        }
+
+        @media #{$max-lg} {
+            width: 100%;
+            max-width: 100%;
+        }
+
+    }
+
+    .blog-btn {
+        width: 80px;
+        height: 80px;
+        border-radius: 20px 0px 20px 0px;
+        background: $light-grey2;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-top: 10px solid rgb(255, 255, 255);
+        border-left: 10px solid rgb(255, 255, 255);
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        bottom: 0;
+        transition: all 0.4s ease 0s;
+
+        img {
+            display: inline-block;
+        }
+
+        &:hover {
+            background: $theme-color;
+
+            img {
+                filter: brightness(100%) invert(1);
+            }
+        }
+    }
+
+    .popup-video {
+        font-size: 30px;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        background: $theme-color;
+        position: absolute;
+
+        img {
+            width: 20px;
+        }
+    }
+
+    button.slick-arrow {
+        font-size: 24px;
+        border: 0;
+        background: rgba(7, 17, 6, 0.3);
+        width: 45px;
+        height: 45px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+
+    button.slick-next {
+        left: auto;
+        right: 30px;
+    }
+
+    button.slick-prev {
+        left: 30px;
+    }
+
+    @media #{$max-lg} {
+
+        .blog-meta a {
+            font-size: 15px;
+            font-weight: 400;
+        }
+
+        .blog-meta a {
+            margin-right: 3px;
+        }
+
+        .blog-title a {
+            font-size: 24px;
+        }
+    }
+}
+
+.blog-four {
+    background: $white;
+    border-radius: 30px;
+    // box-shadow: 4px 5px 45px 0px rgba(7, 17, 6, 0.05);
+
+
+    .blog-thumb {
+        padding: 30px 30px 0 30px;
+        ;
+        position: relative;
+        z-index: 1;
+
+        img {
+            width: 100%;
+            border-radius: 20px;
+        }
+
+        .blog-date {
+            color: $heding;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: $satoshiBold;
+            background: $white;
+            padding: 3px 20px;
+            border-radius: 50px;
+            position: absolute;
+            z-index: 1;
+            right: 50px;
+            top: 50px;
+        }
+    }
+
+    .blog-meta {
+        a {
+            color: $heding;
+            font-size: 18px;
+            font-weight: 400;
+            display: inline-block;
+            @include transition(.4s);
+
+            &:hover {
+                color: $theme-color3;
+            }
+        }
+
+        .divider {
+            display: inline-block;
+            width: 1.4px;
+            height: 14px;
+            background: $black;
+            transform: rotate(32deg) translateY(2px);
+        }
+    }
+
+    .blog-title {
+        margin-bottom: 28px;
+
+        a {
+            color: $heding;
+            font-size: 24px;
+            line-height: 36px;
+            font-weight: 500;
+            font-family: $satoshiMedium;
+
+            &:hover {
+                color: $theme-color3;
+            }
+        }
+    }
+
+    .blog-content {
+        padding: 0 30px 25px 30px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .blog-btn {
+        font-size: 30px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background: $white;
+        border: 1px solid $heding;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s ease 0s;
+
+        &:hover {
+            background: $theme-color3;
+            border-color: $theme-color3;
+        }
+    }
+
+    @media #{$max-lg} {
+
+        .blog-thumb {
+            padding: 15px 15px 0 15px;
+        }
+
+        .blog-content {
+            padding: 0 15px 25px 15px;
+        }
+
+        .blog-meta a {
+            font-size: 15px;
+            font-weight: 400;
+        }
+    }
+
+    @media #{$max-xs} {
+        .blog-thumb {
+            .blog-date {
+                right: 30px;
+                top: 30px;
+            }
+        }
+
+        .blog-btn {
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+}
+
+.author-blockquote {
+    background: $light-grey2;
+    padding: 50px 60px 50px 30px;
+    border-radius: 20px;
+
+    .author {
+        float: left;
+        overflow: hidden;
+        margin-right: 30px;
+
+        img {
+            border-radius: 50%;
+        }
+
+        @media #{$max-xs} {
+
+            float: none;
+            margin-right: 0;
+
+        }
+    }
+
+
+    .blockquote {
+        margin-bottom: 16px;
+
+        p {
+            color: $heding;
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 1.6;
+
+            @media #{$max-lg} {
+                font-size: 20px;
+            }
+        }
+    }
+
+    .content {
+        overflow: hidden;
+    }
+
+    .blockquote-footer {
+        color: $theme-color;
+        display: inline-block;
+        font-size: 24px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        position: relative;
+
+        &::before {
+            position: absolute;
+            left: auto;
+            right: -46px;
+        }
+
+        @media #{$max-lg} {
+            font-size: 20px;
+        }
+    }
+
+    @media #{$max-lg} {
+        padding: 40px 15px 30px 15px;
+    }
+}
+
+
+.blog-round {
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+}
+
+.blog-section-bg {
+    background: rgb(231, 249, 241);
+}
+
+.blog-section-bg-2 {
+    background: #E9F3F6;
+}
+
+//comment-box
+.comment-reply-title,
+.comment-title,
+.blog-details-title {
+    font-size: 42px;
+
+    @media #{$max-lg} {
+        font-size: 24px;
+    }
+}
+
+.comment-box {
+    position: relative;
+    z-index: 1;
+    border-bottom: 2px solid rgba(7, 17, 6, 0.05);
+
+    .date {
+        color: rgba(0, 0, 0, 0.6);
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .name {
+        font-size: 20px;
+        font-weight: 600;
+        color: $heding;
+    }
+
+    .comment-avatar {
+        float: left;
+        margin-right: 30px;
+        margin-top: 8px;
+
+        img {
+            width: 100px;
+            height: 100px;
+        }
+
+        @media #{$xs} {
+            float: none;
+            margin-right: 0;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+    }
+
+    .comment-content {
+        overflow: hidden;
+
+        p {
+            i {
+                margin-right: 5px;
+            }
+        }
+
+        h5 {
+            margin-bottom: 3px;
+        }
+    }
+
+    .comment-reply-link {
+        color: $heding;
+        font-size: 16px;
+        font-weight: 500;
+        font-family: $satoshiMedium;
+        padding: 10px 22px;
+        line-height: 1;
+        position: absolute;
+        background: $light-grey2;
+        z-index: 1;
+        right: 0;
+        top: 8px;
+        border-radius: 4px;
+
+        @media #{$xs} {
+            float: none;
+            margin-right: 0;
+            margin-top: 0;
+            position: relative;
+        }
+
+        &:hover {
+            color: $white;
+            background: $heding;
+        }
+    }
+}
+
+.comment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    li {
+        padding-bottom: 20px;
+        margin-bottom: 45px;
+    }
+}
+
+//comment
+
+.media-content {
+    border-bottom: 1px solid $heding;
+}

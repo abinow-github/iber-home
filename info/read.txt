@@ -1,0 +1,6 @@
+ref:
+  https://specter-studios.webflow.io/   
+
+  text effect
+     https://codepen.io/andysanchez-dev/pen/GYPevV
+     https://codepen.io/equinusocio/pen/KNYOxJ
