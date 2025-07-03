@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <!-- bootsrap 5 -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <style>
+
+h2{
+  font-size: 3rem;
+  text-transform: capitalize;
+  padding-bottom: 30px;
+}
+
+@media screen and (min-width:992px) {
+  .hide-lg{
+      display: none !important;
+  }
+}
+@media screen and (min-width:765px) and (max-width:992px) {
+  .hide-md{
+      display: none !important;
+  }
+}
+@media screen and (max-width:765px) {
+  h2{
+      font-size: 2.5rem;
+  }
+  .hide-sm{
+      display: none !important;
+  }
+}
+
+
+
+        /*==================================================================
+                      section-7/faq 
+==================================================================*/
+.faq-scn{
+  padding-bottom: 10vh;
+  width: 100%;
+  margin: 10vh 0;
+  .title{
+    /* padding-bottom: 0; */
+    /* margin-bottom: 0; */
+    font-weight: bold;
+    font-size: 3rem;
+  }
+  .faq-heading {
+    /* font-family: Lato;    */
+    font-weight: 400;
+    font-size: 19px;
+     -webkit-transition: text-indent 0.2s;
+    /* text-indent: 20px; */
+    color: #333;
+    padding: 10px 0;
+  }
+  
+  .faq-text {
+    /* font-family: Open Sans;    */
+    font-weight: 400;
+    color: #919191;
+    width:95%;
+    padding-left:20px;
+    margin-bottom:30px;
+  }
+  
+  .faq-col {
+    /* width: 100%; */
+    margin: 0 auto;
+    /* background: white;*/
+    border-radius: 4px;
+    position: relative;
+    /* border: 1px solid #E1E1E1; */
+    /* display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px; */
+  }
+
+  .faq-col label {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    height: 56px;
+    padding-top:1px;
+    margin-bottom: 10px;
+    background-color: #FAFAFA;
+    border-bottom: 1px solid #E1E1E1;
+  }
+  
+  .faq-col input[type="checkbox"] {
+    display: none;
+  }
+  
+  .faq-col .faq-arrow {
+    width: 10px;
+    height: 10px;
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    border-top: 2px solid rgba(0, 0, 0, 0.33);
+    border-right: 2px solid rgba(0, 0, 0, 0.33);
+    float: right;
+    position: relative;
+    top: -38px;
+    right: 27px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+  }
+  
+   .faq-col input[type="checkbox"]:checked + label > .faq-arrow {
+    transition: -webkit-transform 0.8s;
+    transition: transform 0.8s;
+    transition: transform 0.8s, -webkit-transform 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    -webkit-transform: rotate(135deg);
+            transform: rotate(135deg);
+  }
+   .faq-col input[type="checkbox"]:checked + label {
+    display: block;
+    background: rgba(255,255,255,255) !important;
+    color: #4f7351;
+    height: 350px;
+    transition: height 0.8s;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+   .faq-col input[type='checkbox']:not(:checked) + label {
+    display: block;
+    transition: height 0.8s;
+    height: 60px;
+    -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+@media screen and (max-width:765px) {
+  .faq-scn{
+    .faq-col input[type='checkbox']:not(:checked) + label {
+      height: 70px;
+      /* -webkit-transition-timing-function: cubic-bezier(0.68, -0.55, 0.265, 1.55); */
+    }
+    .faq-col input[type="checkbox"]:checked + label {
+      height: 450px;
+    }
+  }
+}
+/*==================================================================
+                      section-7/faq END
+==================================================================*/
+    </style>
+    <!-- ==================================================================
+    section-7 FAQ 
+================================================================== -->
+<section class="scn-7 faq-scn">
+    <div class="container">
+        <div class="row">
+        
+            <div class='faq-col col-md-6'>
+           
+                    <div>
+                        <input id='faq-a' type='checkbox'>
+                        <label for='faq-a'>
+                         <p class="faq-heading">What networking services does Wayons Technologies LLP provide?</p>
+                         <div class='faq-arrow'></div>
+                         <p class="faq-text">
+                         Wayons Technologies LLP offers a full suite of networking services designed to ensure smooth connectivity for businesses of all sizes. Our services include network design, installation, and maintenance, ensuring a secure and reliable infrastructure. We focus on creating scalable network solutions that support your company’s growth while improving performance and minimizing downtime.
+                         </p>
+                        </label>
+                    </div>
+                    <div>
+                        <input id='faq-b' type='checkbox'>
+                        <label for='faq-b'>
+                         <p class="faq-heading">How can your server solutions benefit my business?</p>
+                         <div class='faq-arrow'></div>
+                         <p class="faq-text">
+                         Our server solutions are designed to enhance the efficiency and security of your business operations. We provide custom server installation, configuration, and ongoing management, ensuring that your business data is stored securely and accessible whenever needed. Whether you're a small business or a large enterprise, our solutions are scalable, allowing for smooth operations and data management.
+                          </p>
+                        </label>
+                    </div>
+
+
+                    <div>
+                        <input id='faq-c' type='checkbox'>
+                        <label for='faq-c'>
+                         <p class="faq-heading">What types of security systems do you offer?</p>
+                         <div class='faq-arrow'></div>
+                         <p class="faq-text">At Wayons Technologies LLP, we specialize in a wide range of security solutions, including IP camera systems, CCTV installation services, and dome CCTV systems. We also provide advanced punching systems for access control and monitoring. These systems are designed to offer concurrent surveillance and protection for your premises, giving you peace of mind and enhanced security.</p>
+                        </label>
+                    </div>
+                    <div>
+                        <input id='faq-d' type='checkbox'>
+                        <label for='faq-d'>
+                         <p class="faq-heading">How do your automation services improve business efficiency?</p>
+                         <div class='faq-arrow'></div>
+                         <p class="faq-text">Our automation services help modernize business operations by automating routine processes, reducing human error, and improving overall productivity. From system integration to automating security controls and access systems, our services are designed to improve workflows and reduce operational bottlenecks, ensuring your business runs efficiently and securely.</p>
+                        </label>
+                    </div>
+              
+                
+                
+                 </div>
+
+                 </div>
+        
+    </div>
+</section>
+<!-- ==================================================================
+    section-7 FAQ END
+================================================================== -->
+<div style="height: 100vh;"></div>
+<!-- bootsrap 5 -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
